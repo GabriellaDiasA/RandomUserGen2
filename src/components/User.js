@@ -10,7 +10,10 @@ const User = ({ user, onDelete }) => {
                     style={{ color: 'red', cursor: 'pointer' }}
                     onClick = {() => onDelete(user.id)}/>
             </h3>
-            <p>Age: {user.age}</p>
+            <p>Age: <b>{user.age}</b> <em>[{user.dateOfBirth}]</em> </p>
+            <p>Gender: <b>{user.gender}</b></p>
+            <p>Password: <b>{user.password}</b></p>
+            <p>Email: <b>{user.email}</b></p>
             <img
                 src={user.picture}
                 alt={`${user.name}'s profile`}></img>
